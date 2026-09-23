@@ -9,7 +9,7 @@ RUN go mod download
 COPY . .
 
 # Set CGO_ENABLED=1 if project relies on C libraries
-RUN CGO_ENABLED=0 GOOS=linux go build -o /out/backend ./cmd/backend
+RUN CGO_ENABLED=0 GOOS=linux go build -o /out/backend ./cmd/server
 
 
 FROM scratch
