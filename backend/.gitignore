@@ -1,0 +1,5 @@
+# Secret dev files
+.env
+
+# Log files
+logs/
